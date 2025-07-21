@@ -2,11 +2,8 @@
 
 body {
     font-family: Roboto;
-    /* display: flex;
-    flex-direction: column;
-    flex: 1;
     margin: 0;
-    padding: 0; */
+    padding: 0;
 }
 
 button {
@@ -14,6 +11,9 @@ button {
     height: 30px;
     border-radius: 10px;
     margin: 10px 0;
+    border-style: solid;
+    color: #f9faf8;
+    font-weight: bold;
 }
 
 ul {
@@ -47,6 +47,7 @@ nav ul {
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 600;
 }
 
 nav a {
@@ -76,9 +77,6 @@ nav, .logo {
 
 .hero-area-section button {
     background-color: #3882F6;
-    border-style: solid;
-    color: #f9faf8;
-    font-weight: bold;
 }
 
 .hero-area-section .left {
@@ -89,6 +87,7 @@ nav, .logo {
     background-color: beige;
     width: 400px;
     height: 200px;
+    object-fit: cover;
 }
 
 
@@ -125,35 +124,37 @@ nav, .logo {
 .random-information-section ul img {
     width: 100%;
     height: 150px;
-    border-color:  #3882F6;
-    border-width: 11px solid;
+    border: 3px solid #3882F6;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /* quote-section  */
 .quote-section {
     background-color: #e5e7eb;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 100px 0;
-    gap: 20px;
+}
 
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
 }
 
 .quote-header-text {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    color: #1f2937;
-    align-items: center;
-    max-width: 700px;
-    
+    color: #1f2937;  
 }
 
 .quote-header-text-author {
     align-self:self-end;
-    max-width: 700px;
+    font-weight: bold;
+    margin-top: 20px;
 
 }
 
